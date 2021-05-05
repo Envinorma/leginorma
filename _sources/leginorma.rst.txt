@@ -1,0 +1,29 @@
+leginorma package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   leginorma.bin
+
+Submodules
+----------
+
+leginorma.example module
+------------------------
+
+.. automodule:: leginorma.example
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: leginorma
+   :members:
+   :undoc-members:
+   :show-inheritance:

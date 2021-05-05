@@ -1,0 +1,21 @@
+leginorma.bin package
+=====================
+
+Submodules
+----------
+
+leginorma.bin.my\_example module
+--------------------------------
+
+.. automodule:: leginorma.bin.my_example
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: leginorma.bin
+   :members:
+   :undoc-members:
+   :show-inheritance:
