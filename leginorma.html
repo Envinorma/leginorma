@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>leginorma package &mdash; Leginorma 0.0.0 documentation</title>
+  <title>leginorma package &mdash; Leginorma 0.0.1 documentation</title>
   
 
   
@@ -38,7 +38,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="leginorma.bin package" href="leginorma.bin.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
     <link rel="prev" title="leginorma" href="modules.html" /> 
 </head>
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.0.0
+                0.0.1
               </div>
             
           
@@ -98,12 +98,9 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Package modules</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">leginorma package</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="leginorma.bin.html">leginorma.bin package</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-leginorma.example">leginorma.example module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-leginorma.api">leginorma.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-leginorma.models">leginorma.models module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-leginorma">Module contents</a></li>
 </ul>
 </li>
@@ -180,7 +177,7 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
-        <a href="leginorma.bin.html" class="btn btn-neutral float-right" title="leginorma.bin package" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
       
       
         <a href="modules.html" class="btn btn-neutral float-left" title="leginorma" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
@@ -194,95 +191,182 @@
             
   <div class="section" id="leginorma-package">
 <h1>leginorma package<a class="headerlink" href="#leginorma-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="leginorma.bin.html">leginorma.bin package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="leginorma.bin.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leginorma.bin.html#module-leginorma.bin.my_example">leginorma.bin.my_example module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leginorma.bin.html#module-leginorma.bin">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-leginorma.example">
-<span id="leginorma-example-module"></span><h2>leginorma.example module<a class="headerlink" href="#module-leginorma.example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-leginorma.api">
+<span id="leginorma-api-module"></span><h2>leginorma.api module<a class="headerlink" href="#module-leginorma.api" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="leginorma.example.Example">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.example.</span></code><code class="sig-name descname"><span class="pre">Example</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init_value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/example.html#Example"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.example.Example" title="Permalink to this definition">¶</a></dt>
+<dt id="leginorma.api.LegifranceClient">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.api.</span></code><code class="sig-name descname"><span class="pre">LegifranceClient</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_secret</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/api.html#LegifranceClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.api.LegifranceClient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>This is an example object. Use this example for ideas on how to write doc strings,
-use logging, construct objects. This is not an exhaustive example but a decent
-start.</p>
+<p>Initialize Legifrance client with client_id and client_secret.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>init_value</strong> (<em>int</em>) – An integer value to initialize the object with.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client_id</strong> (<em>str</em>) – client_id provided by Legifrance</p></li>
+<li><p><strong>client_secret</strong> (<em>str</em>) – client_secret provided by Legifrance</p></li>
+</ul>
 </dd>
 </dl>
 <dl class="py method">
-<dt id="leginorma.example.Example.get_previous_value">
-<code class="sig-name descname"><span class="pre">get_previous_value</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="reference internal" href="_modules/leginorma/example.html#Example.get_previous_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.example.Example.get_previous_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the previous value.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>previous_value</strong> – The previous value stored in the object.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="leginorma.example.Example.get_value">
-<code class="sig-name descname"><span class="pre">get_value</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="reference internal" href="_modules/leginorma/example.html#Example.get_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.example.Example.get_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the current value.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>current_value</strong> – The current value stored in the object.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt id="leginorma.example.Example.update_value">
-<code class="sig-name descname"><span class="pre">update_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">int</span><a class="reference internal" href="_modules/leginorma/example.html#Example.update_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.example.Example.update_value" title="Permalink to this definition">¶</a></dt>
-<dd><p>Save old value and set new value.</p>
+<dt id="leginorma.api.LegifranceClient.consult_article">
+<code class="sig-name descname"><span class="pre">consult_article</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">article_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><a class="reference internal" href="_modules/leginorma/api.html#LegifranceClient.consult_article"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.api.LegifranceClient.consult_article" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches article by id</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>new_value</strong> (<em>int</em>) – The new value to assign to the object.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>old_value</strong> – The previous value stored in the object.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
+<dd class="field-odd"><p><strong>article_id</strong> (<em>str</em>) – Identifier of the article</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt id="leginorma.example.Example.values">
-<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">values</span></code><a class="headerlink" href="#leginorma.example.Example.values" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get both values stored in the object as a tuple of integers.</p>
+<dt id="leginorma.api.LegifranceClient.consult_law_decree">
+<code class="sig-name descname"><span class="pre">consult_law_decree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><a class="reference internal" href="_modules/leginorma/api.html#LegifranceClient.consult_law_decree"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.api.LegifranceClient.consult_law_decree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches the version of a law/decree/arrete by text identifier for a specific date.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><strong>values</strong> – The current and old values stored in a tuple in (current_value, old_value)
-order.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>Tuple[int]</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text_id</strong> (<em>str</em>) – Identifier of the text</p></li>
+<li><p><strong>date</strong> (<em>Optional[datetime]</em>) – Date of the version to retrieve. Default to datetime.now()</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="leginorma.api.LegifranceRequestError">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.api.</span></code><code class="sig-name descname"><span class="pre">LegifranceRequestError</span></code><a class="reference internal" href="_modules/leginorma/api.html#LegifranceRequestError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.api.LegifranceRequestError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-leginorma.models">
+<span id="leginorma-models-module"></span><h2>leginorma.models module<a class="headerlink" href="#module-leginorma.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="leginorma.models.ArticleStatus">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.models.</span></code><code class="sig-name descname"><span class="pre">ArticleStatus</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/models.html#ArticleStatus"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.ArticleStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt id="leginorma.models.ArticleStatus.ABROGE">
+<code class="sig-name descname"><span class="pre">ABROGE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'ABROGE'</span></em><a class="headerlink" href="#leginorma.models.ArticleStatus.ABROGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.ArticleStatus.VIGUEUR">
+<code class="sig-name descname"><span class="pre">VIGUEUR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'VIGUEUR'</span></em><a class="headerlink" href="#leginorma.models.ArticleStatus.VIGUEUR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="leginorma.models.LegifranceArticle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.models.</span></code><code class="sig-name descname"><span class="pre">LegifranceArticle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_ordre</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etat</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#leginorma.models.ArticleStatus" title="leginorma.models.ArticleStatus"><span class="pre">leginorma.models.ArticleStatus</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/models.html#LegifranceArticle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceArticle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceArticle.content">
+<code class="sig-name descname"><span class="pre">content</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#leginorma.models.LegifranceArticle.content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceArticle.etat">
+<code class="sig-name descname"><span class="pre">etat</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#leginorma.models.ArticleStatus" title="leginorma.models.ArticleStatus"><span class="pre">leginorma.models.ArticleStatus</span></a></em><a class="headerlink" href="#leginorma.models.LegifranceArticle.etat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="leginorma.models.LegifranceArticle.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#leginorma.models.LegifranceArticle" title="leginorma.models.LegifranceArticle"><span class="pre">leginorma.models.LegifranceArticle</span></a><a class="reference internal" href="_modules/leginorma/models.html#LegifranceArticle.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceArticle.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceArticle.id">
+<code class="sig-name descname"><span class="pre">id</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#leginorma.models.LegifranceArticle.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceArticle.int_ordre">
+<code class="sig-name descname"><span class="pre">int_ordre</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#leginorma.models.LegifranceArticle.int_ordre" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceArticle.num">
+<code class="sig-name descname"><span class="pre">num</span></code><em class="property"><span class="pre">:</span> <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#leginorma.models.LegifranceArticle.num" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="leginorma.models.LegifranceArticle.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/models.html#LegifranceArticle.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceArticle.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="leginorma.models.LegifranceSection">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.models.</span></code><code class="sig-name descname"><span class="pre">LegifranceSection</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_ordre</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">articles</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List[ForwardRef(‘LegifranceArticle’)]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List[ForwardRef(‘LegifranceSection’)]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etat</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#leginorma.models.ArticleStatus" title="leginorma.models.ArticleStatus"><span class="pre">leginorma.models.ArticleStatus</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/models.html#LegifranceSection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceSection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceSection.articles">
+<code class="sig-name descname"><span class="pre">articles</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#leginorma.models.LegifranceArticle" title="leginorma.models.LegifranceArticle"><span class="pre">leginorma.models.LegifranceArticle</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#leginorma.models.LegifranceSection.articles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceSection.etat">
+<code class="sig-name descname"><span class="pre">etat</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#leginorma.models.ArticleStatus" title="leginorma.models.ArticleStatus"><span class="pre">leginorma.models.ArticleStatus</span></a></em><a class="headerlink" href="#leginorma.models.LegifranceSection.etat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="leginorma.models.LegifranceSection.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#leginorma.models.LegifranceSection" title="leginorma.models.LegifranceSection"><span class="pre">leginorma.models.LegifranceSection</span></a><a class="reference internal" href="_modules/leginorma/models.html#LegifranceSection.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceSection.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceSection.int_ordre">
+<code class="sig-name descname"><span class="pre">int_ordre</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#leginorma.models.LegifranceSection.int_ordre" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceSection.sections">
+<code class="sig-name descname"><span class="pre">sections</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#leginorma.models.LegifranceSection" title="leginorma.models.LegifranceSection"><span class="pre">leginorma.models.LegifranceSection</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#leginorma.models.LegifranceSection.sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceSection.title">
+<code class="sig-name descname"><span class="pre">title</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#leginorma.models.LegifranceSection.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="leginorma.models.LegifranceText">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">leginorma.models.</span></code><code class="sig-name descname"><span class="pre">LegifranceText</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">visa</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">articles</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#leginorma.models.LegifranceArticle" title="leginorma.models.LegifranceArticle"><span class="pre">leginorma.models.LegifranceArticle</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#leginorma.models.LegifranceSection" title="leginorma.models.LegifranceSection"><span class="pre">leginorma.models.LegifranceSection</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/leginorma/models.html#LegifranceText"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceText.articles">
+<code class="sig-name descname"><span class="pre">articles</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#leginorma.models.LegifranceArticle" title="leginorma.models.LegifranceArticle"><span class="pre">leginorma.models.LegifranceArticle</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#leginorma.models.LegifranceText.articles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="leginorma.models.LegifranceText.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#leginorma.models.LegifranceText" title="leginorma.models.LegifranceText"><span class="pre">leginorma.models.LegifranceText</span></a><a class="reference internal" href="_modules/leginorma/models.html#LegifranceText.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#leginorma.models.LegifranceText.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceText.sections">
+<code class="sig-name descname"><span class="pre">sections</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#leginorma.models.LegifranceSection" title="leginorma.models.LegifranceSection"><span class="pre">leginorma.models.LegifranceSection</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#leginorma.models.LegifranceText.sections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceText.title">
+<code class="sig-name descname"><span class="pre">title</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#leginorma.models.LegifranceText.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="leginorma.models.LegifranceText.visa">
+<code class="sig-name descname"><span class="pre">visa</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#leginorma.models.LegifranceText.visa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 

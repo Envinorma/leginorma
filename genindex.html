@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Index &mdash; Leginorma 0.0.0 documentation</title>
+  <title>Index &mdash; Leginorma 0.0.1 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.0.0
+                0.0.1
               </div>
             
           
@@ -96,12 +96,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Package modules</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="leginorma.html">leginorma package</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="leginorma.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="leginorma.bin.html">leginorma.bin package</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="leginorma.html#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma.example">leginorma.example module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma.api">leginorma.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma.models">leginorma.models module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma">Module contents</a></li>
 </ul>
 </li>
@@ -182,31 +179,47 @@
 
 <div class="genindex-jumpbox">
  <a href="#A"><strong>A</strong></a>
- | <a href="#D"><strong>D</strong></a>
+ | <a href="#C"><strong>C</strong></a>
  | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
  | <a href="#G"><strong>G</strong></a>
+ | <a href="#I"><strong>I</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
- | <a href="#U"><strong>U</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
  | <a href="#V"><strong>V</strong></a>
  
 </div>
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.bin.html#leginorma.bin.my_example.Args">Args (class in leginorma.bin.my_example)</a>
+      <li><a href="leginorma.html#leginorma.models.ArticleStatus.ABROGE">ABROGE (leginorma.models.ArticleStatus attribute)</a>
+</li>
+      <li><a href="leginorma.html#leginorma.models.LegifranceSection.articles">articles (leginorma.models.LegifranceSection attribute)</a>
+
+      <ul>
+        <li><a href="leginorma.html#leginorma.models.LegifranceText.articles">(leginorma.models.LegifranceText attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.ArticleStatus">ArticleStatus (class in leginorma.models)</a>
 </li>
   </ul></td>
 </tr></table>
 
-<h2 id="D">D</h2>
+<h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.bin.html#leginorma.bin.my_example.Args.DEFAULT_FIRST">DEFAULT_FIRST (leginorma.bin.my_example.Args attribute)</a>
+      <li><a href="leginorma.html#leginorma.api.LegifranceClient.consult_article">consult_article() (leginorma.api.LegifranceClient method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.bin.html#leginorma.bin.my_example.Args.DEFAULT_SECOND">DEFAULT_SECOND (leginorma.bin.my_example.Args attribute)</a>
+      <li><a href="leginorma.html#leginorma.api.LegifranceClient.consult_law_decree">consult_law_decree() (leginorma.api.LegifranceClient method)</a>
+</li>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.content">content (leginorma.models.LegifranceArticle attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -214,8 +227,26 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.html#leginorma.example.Example">Example (class in leginorma.example)</a>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.etat">etat (leginorma.models.LegifranceArticle attribute)</a>
+
+      <ul>
+        <li><a href="leginorma.html#leginorma.models.LegifranceSection.etat">(leginorma.models.LegifranceSection attribute)</a>
 </li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.from_dict">from_dict() (leginorma.models.LegifranceArticle class method)</a>
+
+      <ul>
+        <li><a href="leginorma.html#leginorma.models.LegifranceSection.from_dict">(leginorma.models.LegifranceSection class method)</a>
+</li>
+        <li><a href="leginorma.html#leginorma.models.LegifranceText.from_dict">(leginorma.models.LegifranceText class method)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -225,16 +256,38 @@
       <li><a href="leginorma.html#leginorma.get_module_version">get_module_version() (in module leginorma)</a>
 </li>
   </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.html#leginorma.example.Example.get_previous_value">get_previous_value() (leginorma.example.Example method)</a>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.id">id (leginorma.models.LegifranceArticle attribute)</a>
 </li>
-      <li><a href="leginorma.html#leginorma.example.Example.get_value">get_value() (leginorma.example.Example method)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.int_ordre">int_ordre (leginorma.models.LegifranceArticle attribute)</a>
+
+      <ul>
+        <li><a href="leginorma.html#leginorma.models.LegifranceSection.int_ordre">(leginorma.models.LegifranceSection attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle">LegifranceArticle (class in leginorma.models)</a>
+</li>
+      <li><a href="leginorma.html#leginorma.api.LegifranceClient">LegifranceClient (class in leginorma.api)</a>
+</li>
+      <li><a href="leginorma.html#leginorma.api.LegifranceRequestError">LegifranceRequestError</a>
+</li>
+      <li><a href="leginorma.html#leginorma.models.LegifranceSection">LegifranceSection (class in leginorma.models)</a>
+</li>
+      <li><a href="leginorma.html#leginorma.models.LegifranceText">LegifranceText (class in leginorma.models)</a>
+</li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     leginorma
@@ -244,26 +297,17 @@
 </li>
       </ul></li>
       <li>
-    leginorma.bin
+    leginorma.api
 
       <ul>
-        <li><a href="leginorma.bin.html#module-leginorma.bin">module</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    leginorma.bin.my_example
-
-      <ul>
-        <li><a href="leginorma.bin.html#module-leginorma.bin.my_example">module</a>
+        <li><a href="leginorma.html#module-leginorma.api">module</a>
 </li>
       </ul></li>
       <li>
-    leginorma.example
+    leginorma.models
 
       <ul>
-        <li><a href="leginorma.html#module-leginorma.example">module</a>
+        <li><a href="leginorma.html#module-leginorma.models">module</a>
 </li>
       </ul></li>
   </ul></td>
@@ -272,28 +316,52 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.bin.html#leginorma.bin.my_example.main">main() (in module leginorma.bin.my_example)</a>
-</li>
       <li>
     module
 
       <ul>
         <li><a href="leginorma.html#module-leginorma">leginorma</a>
 </li>
-        <li><a href="leginorma.bin.html#module-leginorma.bin">leginorma.bin</a>
+        <li><a href="leginorma.html#module-leginorma.api">leginorma.api</a>
 </li>
-        <li><a href="leginorma.bin.html#module-leginorma.bin.my_example">leginorma.bin.my_example</a>
-</li>
-        <li><a href="leginorma.html#module-leginorma.example">leginorma.example</a>
+        <li><a href="leginorma.html#module-leginorma.models">leginorma.models</a>
 </li>
       </ul></li>
   </ul></td>
 </tr></table>
 
-<h2 id="U">U</h2>
+<h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.html#leginorma.example.Example.update_value">update_value() (leginorma.example.Example method)</a>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.num">num (leginorma.models.LegifranceArticle attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceSection.sections">sections (leginorma.models.LegifranceSection attribute)</a>
+
+      <ul>
+        <li><a href="leginorma.html#leginorma.models.LegifranceText.sections">(leginorma.models.LegifranceText attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceSection.title">title (leginorma.models.LegifranceSection attribute)</a>
+
+      <ul>
+        <li><a href="leginorma.html#leginorma.models.LegifranceText.title">(leginorma.models.LegifranceText attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceArticle.to_dict">to_dict() (leginorma.models.LegifranceArticle method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -301,7 +369,11 @@
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="leginorma.html#leginorma.example.Example.values">values() (leginorma.example.Example property)</a>
+      <li><a href="leginorma.html#leginorma.models.ArticleStatus.VIGUEUR">VIGUEUR (leginorma.models.ArticleStatus attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="leginorma.html#leginorma.models.LegifranceText.visa">visa (leginorma.models.LegifranceText attribute)</a>
 </li>
   </ul></td>
 </tr></table>

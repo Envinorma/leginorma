@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Welcome to Leginorma’s documentation! &mdash; Leginorma 0.0.0 documentation</title>
+  <title>Welcome to Leginorma’s documentation! &mdash; Leginorma 0.0.1 documentation</title>
   
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0.0.0
+                0.0.1
               </div>
             
           
@@ -97,12 +97,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Package modules</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="leginorma.html">leginorma package</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="leginorma.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="leginorma.bin.html">leginorma.bin package</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="leginorma.html#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma.example">leginorma.example module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma.api">leginorma.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma.models">leginorma.models module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="leginorma.html#module-leginorma">Module contents</a></li>
 </ul>
 </li>
@@ -194,9 +191,9 @@
 </div>
 <div class="section" id="leginorma">
 <h1>Leginorma<a class="headerlink" href="#leginorma" title="Permalink to this headline">¶</a></h1>
-<a class="reference external image-reference" href="https://github.com/remidbs/leginorma/actions"><img alt="Build Status" src="https://github.com/remidbs/leginorma/workflows/Build%20Main/badge.svg" /></a>
-<a class="reference external image-reference" href="https://remidbs.github.io/leginorma/"><img alt="Documentation" src="https://github.com/remidbs/leginorma/workflows/Documentation/badge.svg" /></a>
-<a class="reference external image-reference" href="https://codecov.io/gh/remidbs/leginorma"><img alt="Code Coverage" src="https://codecov.io/gh/remidbs/leginorma/branch/main/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://github.com/envinorma/leginorma/actions"><img alt="Build Status" src="https://github.com/envinorma/leginorma/workflows/Build%20Main/badge.svg" /></a>
+<a class="reference external image-reference" href="https://envinorma.github.io/leginorma/"><img alt="Documentation" src="https://github.com/envinorma/leginorma/workflows/Documentation/badge.svg" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/envinorma/leginorma"><img alt="Code Coverage" src="https://codecov.io/gh/envinorma/leginorma/branch/main/graph/badge.svg" /></a>
 <p>Python wrapper for Legifrance API</p>
 <hr class="docutils" />
 <div class="section" id="features">
@@ -208,113 +205,26 @@
 </div>
 <div class="section" id="quick-start">
 <h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">leginorma</span> <span class="kn">import</span> <span class="n">Example</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">leginorma</span> <span class="kn">import</span> <span class="n">LegifranceText</span><span class="p">,</span> <span class="n">LegifranceClient</span>
 
-<span class="n">a</span> <span class="o">=</span> <span class="n">Example</span><span class="p">()</span>
-<span class="n">a</span><span class="o">.</span><span class="n">get_value</span><span class="p">()</span>  <span class="c1"># 10</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">LegifranceClient</span><span class="p">(</span><span class="s1">&#39;client_id&#39;</span><span class="p">,</span> <span class="s1">&#39;client_secret&#39;</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">LegifranceText</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">consult_law_decree</span><span class="p">(</span><span class="s1">&#39;JORFTEXT000034429274&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p><strong>Stable Release:</strong> <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">leginorma</span></code><span class="raw-html-m2r"><br></span>
-<strong>Development Head:</strong> <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/remidbs/leginorma.git</span></code></p>
+<strong>Development Head:</strong> <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/envinorma/leginorma.git</span></code></p>
 </div>
 <div class="section" id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
-<p>For full package documentation please visit <a class="reference external" href="https://remidbs.github.io/leginorma">remidbs.github.io/leginorma</a>.</p>
+<p>For full package documentation please visit <a class="reference external" href="https://envinorma.github.io/leginorma">envinorma.github.io/leginorma</a>.</p>
 </div>
 <div class="section" id="development">
 <h2>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h2>
 <p>See <a class="reference external" href="CONTRIBUTING.md">CONTRIBUTING.md</a> for information related to developing the code.</p>
-</div>
-<div class="section" id="the-four-commands-you-need-to-know">
-<h2>The Four Commands You Need To Know<a class="headerlink" href="#the-four-commands-you-need-to-know" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-e</span> <span class="pre">.[dev]</span></code></p>
-<blockquote>
-<div><p>This will install your package in editable mode with all the required development
-dependencies (i.e. <code class="docutils literal notranslate"><span class="pre">tox</span></code>).</p>
-</div></blockquote>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">build</span></code></p>
-<blockquote>
-<div><p>This will run <code class="docutils literal notranslate"><span class="pre">tox</span></code> which will run all your tests in both Python 3.7
-and Python 3.8 as well as linting your code.</p>
-</div></blockquote>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code></p>
-<blockquote>
-<div><p>This will clean up various Python and build generated files so that you can ensure
-that you are working in a clean environment.</p>
-</div></blockquote>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">docs</span></code></p>
-<blockquote>
-<div><p>This will generate and launch a web browser to view the most up-to-date
-documentation for your Python package.</p>
-</div></blockquote>
-</li>
-</ol>
-<div class="section" id="additional-optional-setup-steps">
-<h3>Additional Optional Setup Steps:<a class="headerlink" href="#additional-optional-setup-steps" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Turn your project into a GitHub repository:</p>
-<ul>
-<li><p>Make an account on <a class="reference external" href="https://github.com">github.com</a></p></li>
-<li><p>Go to <a class="reference external" href="https://github.com/new">make a new repository</a></p></li>
-<li><p><em>Recommendations:</em></p>
-<ul>
-<li><p><em>It is strongly recommended to make the repository name the same as the Python
-package name</em></p></li>
-<li><p><em>A lot of the following optional steps are *free</em> if the repository is Public,
-plus open source is cool*</p></li>
-</ul>
-</li>
-<li><p>After a GitHub repo has been created, run the commands listed under:
-“…or push an existing repository from the command line”</p></li>
-</ul>
-</li>
-<li><p>Register your project with Codecov:</p>
-<ul>
-<li><p>Make an account on <a class="reference external" href="https://codecov.io">codecov.io</a>(Recommended to sign in with GitHub)
-everything else will be handled for you.</p></li>
-</ul>
-</li>
-<li><p>Ensure that you have set GitHub pages to build the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch by selecting the
-<code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch in the dropdown in the “GitHub Pages” section of the repository settings.
-(<a class="reference external" href="https://github.com/remidbs/leginorma/settings">Repo Settings</a>)</p></li>
-<li><p>Register your project with PyPI:</p>
-<ul>
-<li><p>Make an account on <a class="reference external" href="https://pypi.org">pypi.org</a></p></li>
-<li><p>Go to your GitHub repository’s settings and under the
-<a class="reference external" href="https://github.com/remidbs/leginorma/settings/secrets/actions">Secrets tab</a>,
-add a secret called <code class="docutils literal notranslate"><span class="pre">PYPI_TOKEN</span></code> with your password for your PyPI account.
-Don’t worry, no one will see this password because it will be encrypted.</p></li>
-<li><p>Next time you push to the branch <code class="docutils literal notranslate"><span class="pre">main</span></code> after using <code class="docutils literal notranslate"><span class="pre">bump2version</span></code>, GitHub
-actions will build and deploy your Python package to PyPI.</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="suggested-git-branch-strategy">
-<h3>Suggested Git Branch Strategy<a class="headerlink" href="#suggested-git-branch-strategy" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">main</span></code> is for the most up-to-date development, very rarely should you directly
-commit to this branch. GitHub Actions will run on every push and on a CRON to this
-branch but still recommended to commit to your development branches and make pull
-requests to main. If you push a tagged commit with bumpversion, this will also release to PyPI.</p></li>
-<li><p>Your day-to-day work should exist on branches separate from <code class="docutils literal notranslate"><span class="pre">main</span></code>. Even if it is
-just yourself working on the repository, make a PR from your working branch to <code class="docutils literal notranslate"><span class="pre">main</span></code>
-so that you can ensure your commits don’t break the development head. GitHub Actions
-will run on every push to any branch or any pull request from any branch to any other
-branch.</p></li>
-<li><p>It is recommended to use “Squash and Merge” commits when committing PR’s. It makes
-each set of changes to <code class="docutils literal notranslate"><span class="pre">main</span></code> atomic and as a side effect naturally encourages small
-well defined PR’s.</p></li>
-</ol>
 <p><strong>MIT license</strong></p>
-</div>
 </div>
 </div>
 <div class="section" id="indices-and-tables">

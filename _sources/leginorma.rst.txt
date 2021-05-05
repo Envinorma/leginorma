@@ -1,21 +1,21 @@
 leginorma package
 =================
 
-Subpackages
------------
-
-.. toctree::
-   :maxdepth: 4
-
-   leginorma.bin
-
 Submodules
 ----------
 
-leginorma.example module
-------------------------
+leginorma.api module
+--------------------
 
-.. automodule:: leginorma.example
+.. automodule:: leginorma.api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+leginorma.models module
+-----------------------
+
+.. automodule:: leginorma.models
    :members:
    :undoc-members:
    :show-inheritance:
