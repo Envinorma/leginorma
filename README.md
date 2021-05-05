@@ -8,11 +8,6 @@ Python wrapper for Legifrance API
 
 ---
 
-## Features
-
--   Store values and retain the prior value in memory
--   ... some other functionality
-
 ## Quick Start
 
 ```python
