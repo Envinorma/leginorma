@@ -17,9 +17,11 @@ test_requirements = [
     "codecov>=2.1.4",
     "flake8>=3.8.3",
     "flake8-debugger>=3.2.1",
+    "isort>=5.7.0",
     "pytest>=5.4.3",
     "pytest-cov>=2.9.0",
     "pytest-raises>=0.11",
+    "pytest-mypy>=0.8.0",
 ]
 
 dev_requirements = [
@@ -37,7 +39,7 @@ dev_requirements = [
     "wheel>=0.34.2",
 ]
 
-requirements = []
+requirements = ["requests-oauthlib>=1.3.0"]
 
 extra_requirements = {
     "setup": setup_requirements,
@@ -46,7 +48,7 @@ extra_requirements = {
     "all": [
         *requirements,
         *dev_requirements,
-    ]
+    ],
 }
 
 setup(
@@ -63,9 +65,7 @@ setup(
     ],
     description="Python wrapper for Legifrance API",
     entry_points={
-        "console_scripts": [
-            "my_example=leginorma.bin.my_example:main"
-        ],
+        "console_scripts": ["my_example=leginorma.bin.my_example:main"],
     },
     install_requires=requirements,
     license="MIT license",
@@ -80,9 +80,9 @@ setup(
     test_suite="leginorma/tests",
     tests_require=test_requirements,
     extras_require=extra_requirements,
-    url="https://github.com/remidbs/leginorma",
+    url="https://github.com/envinorma/leginorma",
     # Do not edit this string manually, always use bumpversion
     # Details in CONTRIBUTING.rst
-    version="0.0.0",
+    version="0.0.1",
     zip_safe=False,
 )
