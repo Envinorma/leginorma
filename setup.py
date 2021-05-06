@@ -64,9 +64,6 @@ setup(
         "Programming Language :: Python :: 3.9",
     ],
     description="Python wrapper for Legifrance API",
-    entry_points={
-        "console_scripts": ["my_example=leginorma.bin.my_example:main"],
-    },
     install_requires=requirements,
     license="MIT license",
     long_description=readme,
