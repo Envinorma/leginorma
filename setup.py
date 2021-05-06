@@ -64,9 +64,6 @@ setup(
         "Programming Language :: Python :: 3.9",
     ],
     description="Python wrapper for Legifrance API",
-    entry_points={
-        "console_scripts": ["my_example=leginorma.bin.my_example:main"],
-    },
     install_requires=requirements,
     license="MIT license",
     long_description=readme,
@@ -83,6 +80,6 @@ setup(
     url="https://github.com/envinorma/leginorma",
     # Do not edit this string manually, always use bumpversion
     # Details in CONTRIBUTING.rst
-    version="0.0.1",
+    version="0.0.2",
     zip_safe=False,
 )
