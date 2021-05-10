@@ -39,7 +39,7 @@ dev_requirements = [
     "wheel>=0.34.2",
 ]
 
-requirements = ["requests-oauthlib>=1.3.0"]
+requirements = ["requests-oauthlib>=1.3.0", "beautifulsoup4==4.9.3"]
 
 extra_requirements = {
     "setup": setup_requirements,
