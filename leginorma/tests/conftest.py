@@ -22,6 +22,8 @@ from typing import Dict
 
 import pytest
 
+from leginorma import LegifranceText
+
 
 @pytest.fixture
 def data_dir() -> Path:
@@ -30,8 +32,13 @@ def data_dir() -> Path:
 
 # Fixtures can simply be added as a parameter to the other test or fixture functions to
 # expose them. If we had multiple tests that wanted to use the contents of this file,
-# we could simply add "loaded_example_values" as a parameter for each test.
+# we could simply add "legifrance_text" as a parameter for each test.
 @pytest.fixture
-def loaded_example_values(data_dir) -> Dict[str, int]:
-    with open(data_dir / "example_values.json", "r") as read_in:
+def legifrance_text_json(data_dir) -> Dict[str, int]:
+    with open(data_dir / "example_legifrance_text.json", "r") as read_in:
         return json.load(read_in)
+
+
+@pytest.fixture
+def legifrance_text(legifrance_text_json) -> LegifranceText:
+    return LegifranceText.from_dict(legifrance_text_json)
