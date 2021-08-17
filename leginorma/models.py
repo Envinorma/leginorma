@@ -81,7 +81,7 @@ class LegifranceText:
     title: str
     articles: List[LegifranceArticle]
     sections: List[LegifranceSection]
-    last_modification_date: date
+    last_modification_date: Optional[date]
 
     @property
     def sorted_sections_and_articles(self) -> List[Union[LegifranceSection, LegifranceArticle]]:
@@ -102,7 +102,7 @@ class LegifranceText:
             dict_['title'],
             [LegifranceArticle.from_dict(article) for article in dict_['articles']],
             [LegifranceSection.from_dict(section) for section in dict_['sections']],
-            last_modification_date=date.fromisoformat(dict_['modifDate']),
+            last_modification_date=date.fromisoformat(dict_['modifDate']) if dict_.get('modifDate') else None,
         )
 
     def extract_lines(self, keep_abrogated_content: bool) -> List[str]:
@@ -117,7 +117,7 @@ def _split_html(html_str: str) -> List[str]:
     soup = BeautifulSoup(html_str, 'html.parser')
     for tag in soup.find_all('p'):
         tag = cast(Tag, tag)
-        tag.append('\n')
-        tag.insert(0, '\n')
+        tag.append('\n')  # type: ignore
+        tag.insert(0, '\n')  # type: ignore
         tag.unwrap()
     return [x for x in str(soup).split('\n') if x]

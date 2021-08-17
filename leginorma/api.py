@@ -35,21 +35,25 @@ def _extract_response_content(response: requests.Response) -> Dict:
     )
 
 
-def _request_consult_law_decree(cid: str, date: datetime, client: OAuth2Session) -> requests.Response:
-    json_ = {'date': int(date.timestamp()) * 1000, 'textId': cid}
-    url = _API_HOST + '/consult/lawDecree'
-    return client.post(url, json=json_)
-
-
-def _article_by_id(article_id: str, client: OAuth2Session) -> Dict:
-    json_ = {'id': article_id}
-    url = _API_HOST + '/consult/getArticle'
-    response = client.post(url, json=json_)
-    return _extract_response_content(response)
+def _post_request(route: str, payload: Dict[str, Any], client: OAuth2Session) -> Dict:
+    url = _API_HOST + route
+    return _extract_response_content(client.post(url, json=payload))
 
 
 def _consult_law_decree(cid: str, date: Optional[datetime], client: OAuth2Session) -> Dict:
-    return _extract_response_content(_request_consult_law_decree(cid, date or datetime.now(), client))
+    date = date or datetime.now()
+    payload = {'date': int(date.timestamp()) * 1000, 'textId': cid}
+    return _post_request('/consult/lawDecree', payload, client)
+
+
+def _article_by_id(article_id: str, client: OAuth2Session) -> Dict:
+    payload = {'id': article_id}
+    return _post_request('/consult/getArticle', payload, client)
+
+
+def _consult_jorf(cid: str, client: OAuth2Session) -> Dict:
+    payload = {'textCid': cid}
+    return _post_request('/consult/jorf', payload, client)
 
 
 class LegifranceClient:
@@ -80,17 +84,30 @@ class LegifranceClient:
 
     def consult_law_decree(self, text_id: str, date: Optional[datetime] = None) -> Dict[str, Any]:
         """
-        Fetches the version of a law/decree/arrete by text identifier for a specific date.
+        Fetches the consolidated version of a law/decree/arrete by text identifier for a specific date.
+        If no date is provided, today's date is used.
 
         Parameters
         ----------
         text_id: str
-            Identifier of the text
+            Identifier of the text (chronical_id)
         date: Optional[datetime]
             Date of the version to retrieve. Default to datetime.now()
         """
         self._update_client_if_necessary()
         return _consult_law_decree(text_id, date, self._client)
+
+    def consult_jorf(self, text_id: str) -> Dict[str, Any]:
+        """
+        Fetches the JORF version of a law/decree/arrete by text identifier.
+
+        Parameters
+        ----------
+        text_id: str
+            Identifier of the text (chronical_id)
+        """
+        self._update_client_if_necessary()
+        return _consult_jorf(text_id, self._client)
 
     def consult_article(self, article_id: str) -> Dict[str, Any]:
         """

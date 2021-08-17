@@ -1,15 +1,7 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import os
 from dataclasses import replace
 
-from leginorma import LegifranceClient, LegifranceText
+from leginorma import LegifranceText
 from leginorma.models import ArticleStatus, _split_html
-
-
-def test_client():
-    client = LegifranceClient(os.environ['LEGIFRANCE_CLIENT_ID'], os.environ['LEGIFRANCE_CLIENT_SECRET'])
-    LegifranceText.from_dict(client.consult_law_decree('JORFTEXT000034429274'))
 
 
 def test_from_dict(legifrance_text: LegifranceText):

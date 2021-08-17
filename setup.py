@@ -22,6 +22,7 @@ test_requirements = [
     "pytest-cov>=2.9.0",
     "pytest-raises>=0.11",
     "pytest-mypy>=0.8.0",
+    "responses>=0.13.4",
 ]
 
 dev_requirements = [
@@ -80,6 +81,6 @@ setup(
     url="https://github.com/envinorma/leginorma",
     # Do not edit this string manually, always use bumpversion
     # Details in CONTRIBUTING.rst
-    version="0.0.3",
+    version="0.0.4",
     zip_safe=False,
 )
