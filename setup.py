@@ -22,6 +22,7 @@ test_requirements = [
     "pytest-cov>=2.9.0",
     "pytest-raises>=0.11",
     "pytest-mypy>=0.8.0",
+    "responses>=0.13.4",
 ]
 
 dev_requirements = [
